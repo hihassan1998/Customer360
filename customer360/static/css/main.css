@@ -1,71 +1,106 @@
-body{
+body {
+    font-family: Arial, sans-serif;
     text-align: center;
-    margin: auto;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e0e0e0, #f0f0f0); /* Gradient background */
 }
-h1,p{
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1, p {
     font-weight: bold;
 }
-table{
+
+table {
     margin: auto;
-    border: 2px solid #000000;
-    margin-top: 50px;
+    border: 2px solid #000;
     border-radius: 15px;
     background-color: white;
-    text-align: center;
 }
-th{
+
+th, td {
     text-align: center;
 }
 
-.nav{
-    width: 200%;
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     border: 2px solid black;
     border-radius: 10px;
+    list-style: none;
+    padding: 0;
+    background-color: #f0f0f0;
 }
-.nav li{
-    margin-right:  6%;
-    margin-left:  6%;
+
+.nav li {
+    margin: 0 10px;
     font-size: large;
     font-weight: bold;
 }
-.form{
+
+.form {
     margin: auto;
     margin-top: 20px;
     background-color: white;
-    text-align: center;
-    width: 50%;
-    height: 50%;
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
     border: 2px solid black;
     border-radius: 10px;
+    text-align: left;
 }
-.form-group{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 
-    width:100%;
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: calc(100% - 20px);
     padding: 10px;
-    text-align: left;
-    margin-top: 10px;
-    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
-input[type="text"],input[type="email"],input[type="tel"]{
-    width: 100%;
+
+textarea {
+    height: 100px;
 }
-textarea{
-    width: 500px;
-    height: 200px;
-}
-.btn{
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: left;
-    margin-left: 10px;
-}
-.active {
-    background-color: #007bff;
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0056b3; /* Adjusted button color */
     color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #004080; /* Adjusted hover color */
+}
+.btn {
+    margin-bottom: 20px; /* Add margin to the bottom of the button */
+}
+
+table {
+    margin-top: 20px; /* Add margin to the top of the table */
 }
